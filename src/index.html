@@ -1,0 +1,22 @@
+<script defer src="./main.js"></script>
+<fieldset>
+  <legend>Datos del mensaje de voz</legend>
+
+  <select class="voice"></select>
+
+  <label>Tono:
+    <input class="pitch" type="range" min="0" max="2" step="0.25" value="1">
+  </label>
+  <label>Velocidad:
+    <input class="rate" type="range" min="0" max="2" step="0.25" value="1">
+  </label>
+  <label>Volumen:
+    <input class="volume" type="range" min="0" max="1" step="0.1" value="1">
+  </label>
+
+  <textarea cols="60" rows="3" placeholder="Aquí tu mensaje de texto"
+            class="text">Hola. Aún no me sigues en mi canal de Twitch</textarea>
+</fieldset>
+
+<button class="start">Hablar</button>
+<button class="cancel">Cancelar</button>
